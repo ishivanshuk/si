@@ -2,9 +2,9 @@
 
 
   
-  $mailFrom = $_GET['email'];
-  $subject = $_GET['subject'];
-  $message = $_GET['message'];
+  $mailFrom = $_POST['email'];
+  $subject = $_POST['subject'];
+  $message = $_POST['message'];
   
  
   echo($subject);
