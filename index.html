@@ -21,6 +21,18 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">  
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/form-elements.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="assets/ico/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+ 
 </head>
 
 <body>
@@ -717,6 +729,7 @@
       </div>
     </section>End F.A.Q Section -->
 
+
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container">
@@ -725,6 +738,47 @@
           <h2>Contact Us</h2>
           <p>We're here to help & answer any question you might have. We look forward to hearing from you</p>
         </div>
+
+        <div class="top-content">
+             
+          <div class="inner-bg">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-sm-6 col-sm-offset-3 form-box">
+                          <div class="form-top">
+                             
+                              <p>Fill in the form below to send us a message:</p>
+                          </div>
+                         
+                          <div class="form-bottom contact-form">
+                              <form action="forms/contact.php" method="get">
+                                  <div class="form-group">
+                                      <label class="sr-only" for="contact-email">Email</label>
+                                      <input type="text" name="email" placeholder="Email..." class="contact-email form-control" id="contact-email">
+                                  </div>
+                                  <div class="form-group">
+                                      <label class="sr-only" for="contact-subject">Subject</label>
+                                      <input type="text" name="subject" placeholder="Subject..." class="contact-subject form-control" id="contact-subject">
+                                  </div>
+                                  <div class="form-group">
+                                      <label class="sr-only" for="contact-message">Message</label>
+                                      <textarea name="message" placeholder="Message..." class="contact-message form-control" id="contact-message"></textarea>
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="contact-antispam">Antispam question: 7 + 5 = ?</label>
+                                      <input type="text" name="antispam" placeholder="Your answer..." class="contact-antispam form-control" id="contact-antispam">
+                                  </div>
+                                <center> <input type="submit" class="btn" value="Send message"> </center> 
+                              </form>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+           
+      </div>
+
+      <br>
 
         <div class="row no-gutters justify-content-center" data-aos="fade-up">
 
@@ -757,34 +811,6 @@
 
         </div>
 
-        <div class="row mt-5 justify-content-center" data-aos="fade-up">
-          <div class="col-lg-10">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="form-row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validate"></div>
-                </div>
-                <div class="col-md-6 form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validate"></div>
-                </div>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validate"></div>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                <div class="validate"></div>
-              </div>
-              <div class="mb-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><input type="submit" name="submit" class="button" value="Send Message" ></div>
-            </form>
           </div>
 
         </div>
